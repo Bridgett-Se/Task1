@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <img src="Kowloon.jpg" alt="Image 1" class="thumbnail" onclick="openModal(this)">
+        <img src="sing.jpg" alt="Image 2" class="thumbnail" onclick="openModal(this)">
+        <img src="tantan.jpg" alt="Image 3" class="thumbnail" onclick="openModal(this)">
+        
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
